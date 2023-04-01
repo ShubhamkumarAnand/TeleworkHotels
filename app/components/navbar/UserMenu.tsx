@@ -4,6 +4,8 @@ import Avatar from "../Avatar";
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
 
+// This component is for the user menu and User data in the Navbar
+
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = useCallback(() => {
@@ -28,6 +30,8 @@ const UserMenu = () => {
           <Avatar />
         </div>
       </div>
+
+      {/* Dropdown menu  */}
       {isOpen && (
         <div className="md:w-3bg-white absolute right-0 top-12 w-[40vw] overflow-hidden rounded-xl text-sm shadow-md">
           <div className="flex cursor-pointer flex-col">

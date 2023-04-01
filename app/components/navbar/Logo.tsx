@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+// This is the logo in the navbar which on click will redirect the user to the homepage of the application
+
 const Logo = () => {
   const router = useRouter();
   return (

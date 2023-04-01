@@ -5,6 +5,8 @@ import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 
+// The Main Navbar component which consists of all the elements
+
 const Navbar = () => {
   return (
     <div className="fixed z-10 w-full bg-white shadow-sm">
