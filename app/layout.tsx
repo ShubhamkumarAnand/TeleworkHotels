@@ -1,4 +1,3 @@
-import { Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 
@@ -7,6 +6,7 @@ export const metadata = {
   description: "Hotels Designed to Work From Anywhere",
 };
 
+import { Nunito } from "next/font/google";
 const font = Nunito({ subsets: ["latin"] });
 
 export default function RootLayout({
