@@ -66,7 +66,7 @@ const Model: React.FC<ModelProps> = ({
               showModel ? "opacity-100" : "opacity-0"
             }`}
           >
-            <div className="translate foucs:outline-none relative flex h-full w-full flex-col rounded-lg border-0 bg-white outline-none lg:h-auto">
+            <div className="translate relative flex h-full w-full flex-col rounded-lg border-0 bg-white outline-none focus:outline-none lg:h-auto">
               {/* Header */}
               <div className="relative flex items-center justify-center rounded-t border-b-[1px] p-6">
                 <button
@@ -97,6 +97,7 @@ const Model: React.FC<ModelProps> = ({
                     onClick={handleSubit}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>

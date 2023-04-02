@@ -3,10 +3,12 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Avatar from "../Avatar";
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
+import useRegisterModel from "@/app/hooks/useRegisterModel";
 
 // This component is for the user menu and User data in the Navbar
 
 const UserMenu = () => {
+  const registerModel = useRegisterModel()
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
@@ -37,7 +39,7 @@ const UserMenu = () => {
           <div className="flex cursor-pointer flex-col">
             <>
               <MenuItem onClick={() => {}} label="LogIn" />
-              <MenuItem onClick={() => {}} label="SignUp" />
+              <MenuItem onClick={registerModel.onOpen} label="SignUp" />
             </>
           </div>
         </div>
