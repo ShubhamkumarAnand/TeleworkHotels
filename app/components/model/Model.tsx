@@ -14,7 +14,7 @@ interface ModelProps {
   actionLabel: string;
   disabled?: boolean;
   secondaryAction?: () => void;
-  secondaryActionLabel?: () => string;
+  secondaryActionLabel?:string;
 }
 
 const Model: React.FC<ModelProps> = ({
@@ -43,7 +43,7 @@ const Model: React.FC<ModelProps> = ({
     }, 300);
   }, [disabled, onClose]);
 
-  const handleSubit = useCallback(() => {
+  const handleSubmit = useCallback(() => {
     if (disabled) return;
     onSubmit();
   }, [disabled, onSubmit]);
@@ -94,7 +94,7 @@ const Model: React.FC<ModelProps> = ({
                   <Button
                     disabled={disabled}
                     label={actionLabel}
-                    onClick={handleSubit}
+                    onClick={handleSubmit}
                   />
                 </div>
                 {footer}
