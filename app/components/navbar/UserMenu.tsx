@@ -35,7 +35,7 @@ const UserMenu = () => {
 
       {/* Dropdown menu  */}
       {isOpen && (
-        <div className="md:w-3bg-white absolute right-0 top-12 w-[40vw] overflow-hidden rounded-xl text-sm shadow-md">
+        <div className="md:w-3bg-white absolute right-0 top-12 w-[20vw] overflow-hidden rounded-xl text-sm shadow-md">
           <div className="flex cursor-pointer flex-col">
             <>
               <MenuItem onClick={() => {}} label="LogIn" />

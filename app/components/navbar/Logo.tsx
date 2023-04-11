@@ -16,7 +16,7 @@ const Logo = () => {
         width={100}
         height={100}
       />
-      <p className="flex items-center text-4xl font-semibold text-lime-600">
+      <p className="flex items-center text-4xl font-semibold text-lime-600 scale-90 md:scale-100">
         Telework
       </p>
     </div>
