@@ -8,7 +8,7 @@ import useRegisterModel from "@/app/hooks/useRegisterModel";
 // This component is for the user menu and User data in the Navbar
 
 const UserMenu = () => {
-  const registerModel = useRegisterModel()
+  const registerModel = useRegisterModel();
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
@@ -35,7 +35,7 @@ const UserMenu = () => {
 
       {/* Dropdown menu  */}
       {isOpen && (
-        <div className="md:w-3bg-white absolute right-0 top-12 w-[20vw] overflow-hidden rounded-xl text-sm shadow-md">
+        <div className="absolute right-0 top-12 w-[40vw] overflow-hidden rounded-xl bg-white text-sm shadow-md md:w-[12vw]">
           <div className="flex cursor-pointer flex-col">
             <>
               <MenuItem onClick={() => {}} label="LogIn" />

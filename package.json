@@ -1,7 +1,19 @@
 {
-  "name": "teleworkhotels",
+  "name": "telework",
   "version": "0.1.0",
   "private": true,
+  "description": "Home For Developers Around the World",
+  "homepage": "https://telework-hotels.vercel.app/",
+  "license": "MIT",
+  "author": {
+    "name": "Shubham Kumar Anand",
+    "email": "ishubham11anand@gmail.com",
+    "url": "https://imskanand.vercel.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShubhamkumarAnand/TeleworkHotels.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
